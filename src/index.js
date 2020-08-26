@@ -1,13 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import MyList from './MyList';
 import * as serviceWorker from './serviceWorker';
 
+
+var toDos = ["Buy ice cream", "Eat ice cream", "Go to the gym"]
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  
+    <MyList theList ={toDos} />,
+  
   document.getElementById('root')
 );
 
